@@ -1,0 +1,129 @@
+# Upptime configuration for the status pages of all three products:
+#   occultapi.com/status, yogatara.app/status, yogapanchang.com/status
+# Each site reads this repo's history/summary.json, history/<slug>.yml and the
+# "status" issues, and shows its own components (status-groups.json in each site
+# repo maps product -> slugs). Slugs are fixed here so renaming a site never
+# breaks a page or loses its history: do not change a slug once data exists.
+# Admin and payment endpoints are deliberately NOT monitored publicly.
+# Docs: https://upptime.js.org/docs/configuration
+
+owner: occult-lab
+repo: occult-status
+user-agent: occult-lab
+
+# The complete allowlist of repository secrets the workflows may read (once this
+# list exists, any secret not named here is ignored). Unset ones are simply empty.
+secrets:
+  # Notifications (all optional; see SETUP.md). Set NOTIFICATION_<PROVIDER>=true plus its values.
+  - NOTIFICATION_EMAIL
+  - NOTIFICATION_EMAIL_FROM
+  - NOTIFICATION_EMAIL_TO
+  - NOTIFICATION_EMAIL_SMTP
+  - NOTIFICATION_EMAIL_SMTP_HOST
+  - NOTIFICATION_EMAIL_SMTP_PORT
+  - NOTIFICATION_EMAIL_SMTP_USERNAME
+  - NOTIFICATION_EMAIL_SMTP_PASSWORD
+  - NOTIFICATION_SLACK
+  - NOTIFICATION_SLACK_WEBHOOK_URL
+  - NOTIFICATION_DISCORD_WEBHOOK_URL
+  - NOTIFICATION_TELEGRAM
+  - NOTIFICATION_TELEGRAM_BOT_KEY
+  - NOTIFICATION_TELEGRAM_CHAT_ID
+
+sites:
+  # ------------------------------------------------------------ Occult API
+  - name: Occult API
+    slug: occult-api
+    url: https://api.occultapi.com/api/health/
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+  - name: Occult API calculations
+    slug: occult-api-calculations
+    # A real calculation through the engine (the Sun's position at J2000,
+    # checked against the known value), public and never charged: 200 only
+    # when the result is right, 503 otherwise.
+    url: https://api.occultapi.com/api/health/?component=engine
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+  - name: Occult API website
+    slug: occult-api-website
+    url: https://occultapi.com
+    expectedStatusCodes: [200]
+  - name: Occult API docs
+    slug: occult-api-docs
+    url: https://occultapi.com/docs
+    expectedStatusCodes: [200]
+  - name: Occult API MCP server
+    slug: occult-api-mcp
+    # The MCP server runs on the user's machine (npx occult-api-mcp); what it
+    # needs from us is the catalogue it searches, so that is what is checked.
+    url: https://api.occultapi.com/api/docs/index/
+    expectedStatusCodes: [200]
+    maxResponseTime: 10000
+
+  # ------------------------------------------------------------ Yogatara
+  - name: Yogatara website
+    slug: yogatara-website
+    url: https://yogatara.app
+    expectedStatusCodes: [200]
+  - name: Yogatara app and website API
+    slug: yogatara-api
+    url: https://yogataraapi.prahlad.app/api/health/
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+  - name: Yogatara login and accounts
+    slug: yogatara-login
+    # Signed out, the account endpoint answers 401: the auth stack is up.
+    url: https://yogataraapi.prahlad.app/dj-rest-auth/user/
+    expectedStatusCodes: [401]
+  - name: Yogatara Jyotisha AI
+    slug: yogatara-ai
+    # Pings the AI service from inside our API; no model is called.
+    url: https://yogataraapi.prahlad.app/api/health/?component=ai
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+  - name: Yogatara courses
+    slug: yogatara-courses
+    url: https://yogataraapi.prahlad.app/api/courses/
+    expectedStatusCodes: [200]
+  - name: Yogatara community
+    slug: yogatara-community
+    url: https://community.yogatara.app
+    expectedStatusCodes: [200]
+
+  # ------------------------------------------------------------ Yoga Panchang
+  - name: Yoga Panchang website
+    slug: yogapanchang-website
+    url: https://yogapanchang.com
+    expectedStatusCodes: [200]
+  - name: Yoga Panchang daily panchang
+    slug: yogapanchang-daily-panchang
+    url: https://yogapanchang.com/panchang/dainik
+    expectedStatusCodes: [200]
+  - name: Yoga Panchang calculators
+    slug: yogapanchang-calculators
+    url: https://yogapanchang.com/ram-shalaka-prashnavali
+    expectedStatusCodes: [200]
+
+# Check every 5 minutes (the GitHub Actions minimum); the rest are Upptime's defaults.
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  responseTime: "0 23 * * *"
+  graphs: "0 0 * * *"
+  summary: "0 0 * * *"
+  staticSite: "0 1 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+
+# Upptime's own status website. Our three sites read the data directly, so this
+# is optional: it is only published if GitHub Pages is enabled (see SETUP.md).
+status-website:
+  baseUrl: /occult-status
+  name: Occult Lab status
+  introTitle: "Status of Occult API, Yogatara and Yoga Panchang"
+  introMessage: "Checked every 5 minutes from outside our servers. The product pages are at occultapi.com/status, yogatara.app/status and yogapanchang.com/status."
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
