@@ -1,7 +1,7 @@
 # Setting up the status monitor (occult-lab/occult-status)
 
 This repository is ready: Upptime's workflows (template v1.46.3), our
-`.upptimerc.yml` (14 checks across the three products) and a README. It only
+`.upptimerc.yml` (13 checks across the three products) and a README. It only
 needs a token and a push. Steps are from the Upptime docs
 (https://upptime.js.org/docs/get-started, /configuration, /notifications) and
 the template's own workflow files.
@@ -43,9 +43,9 @@ secret. Paste values with no spaces or line breaks around them.
 |---|---|---|
 | `GH_PAT` | the token from step 1 | yes |
 
-No other secret is needed: every check is a public URL. (The calculations check
-uses `/api/health/?component=engine`, which runs a real calculation without an
-API key, so nothing is charged.)
+No other secret is needed: every check is a public URL. (The API health check
+also runs a real calculation through the engine, without an API key, so nothing
+is charged.)
 
 **Notifications (optional).** Upptime alerts through the providers below when
 their secrets are set (all are already in the config's `secrets:` allowlist; a
@@ -96,11 +96,11 @@ Not needed: our three sites read this repository's files directly.
 
 ## What is monitored
 
-14 checks, every 5 minutes. Slugs are fixed in `.upptimerc.yml` and the sites
+13 checks, every 5 minutes. Slugs are fixed in `.upptimerc.yml` and the sites
 group them with `status-groups.json`:
 
-- Occult API: `occult-api` (health), `occult-api-calculations` (the health
-  endpoint's engine check, a real calculation), `occult-api-website`, `occult-api-docs`, `occult-api-mcp` (the
+- Occult API: `occult-api` (health, including a real calculation through the
+  engine), `occult-api-website`, `occult-api-docs`, `occult-api-mcp` (the
   catalogue the MCP server searches; the server itself runs on users' machines)
 - Yogatara: `yogatara-website`, `yogatara-api` (health), `yogatara-login`
   (expects 401 when signed out), `yogatara-ai` (AI service reachability, no

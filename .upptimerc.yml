@@ -37,14 +37,6 @@ sites:
     url: https://api.occultapi.com/api/health/
     expectedStatusCodes: [200]
     maxResponseTime: 5000
-  - name: Occult API calculations
-    slug: occult-api-calculations
-    # A real calculation through the engine (the Sun's position at J2000,
-    # checked against the known value), public and never charged: 200 only
-    # when the result is right, 503 otherwise.
-    url: https://api.occultapi.com/api/health/?component=engine
-    expectedStatusCodes: [200]
-    maxResponseTime: 5000
   - name: Occult API website
     slug: occult-api-website
     url: https://occultapi.com

@@ -18,24 +18,6 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Occult API calculations",
-    "url": "https://api.occultapi.com/api/health/?component=engine",
-    "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
-    "slug": "occult-api-calculations",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 465,
-    "timeDay": 465,
-    "timeWeek": 465,
-    "timeMonth": 465,
-    "timeYear": 465,
-    "dailyMinutesDown": {}
-  },
-  {
     "name": "Occult API website",
     "url": "https://occultapi.com",
     "icon": "https://icons.duckduckgo.com/ip3/occultapi.com.ico",
