@@ -1,7 +1,7 @@
 url: https://yogataraapi.prahlad.app/api/courses/
-status: down
-code: 502
-responseTime: 156
-lastUpdated: 2026-10-23T12:56:56.190Z
+status: up
+code: 200
+responseTime: 398
+lastUpdated: 2026-10-23T13:01:36.238Z
 startTime: 2026-10-22T09:21:55.494Z
 generator: Upptime <https://github.com/upptime/upptime>
