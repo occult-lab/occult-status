@@ -1,7 +1,7 @@
 url: https://yogataraapi.prahlad.app/api/health/?component=ai
-status: down
-code: 502
-responseTime: 844
-lastUpdated: 2026-10-28T13:51:53.815Z
+status: up
+code: 200
+responseTime: 576
+lastUpdated: 2026-10-28T13:56:10.755Z
 startTime: 2026-10-22T09:21:55.070Z
 generator: Upptime <https://github.com/upptime/upptime>
