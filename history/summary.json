@@ -58,19 +58,19 @@
     "url": "https://api.occultapi.com/api/docs/index/",
     "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
     "slug": "occult-api-mcp",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 959,
-    "timeDay": 748,
-    "timeWeek": 948,
-    "timeMonth": 959,
-    "timeYear": 959,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "99.70%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.96%",
+    "uptimeYear": "99.96%",
+    "time": 967,
+    "timeDay": 864,
+    "timeWeek": 959,
+    "timeMonth": 967,
+    "timeYear": 967,
     "dailyMinutesDown": {
-      "2026-10-30": 0
+      "2026-10-30": 4
     }
   },
   {
