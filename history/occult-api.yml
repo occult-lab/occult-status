@@ -1,7 +1,7 @@
 url: https://api.occultapi.com/api/health/
-status: down
-code: 502
-responseTime: 469
-lastUpdated: 2026-11-01T12:50:44.904Z
+status: up
+code: 200
+responseTime: 627
+lastUpdated: 2026-11-01T12:55:21.711Z
 startTime: 2026-10-22T09:21:48.275Z
 generator: Upptime <https://github.com/upptime/upptime>
