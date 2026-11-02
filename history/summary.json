@@ -11,7 +11,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 490,
-    "timeDay": 526,
+    "timeDay": 481,
     "timeWeek": 486,
     "timeMonth": 490,
     "timeYear": 490,
@@ -94,18 +94,20 @@
     "url": "https://yogataraapi.prahlad.app/api/health/",
     "icon": "https://icons.duckduckgo.com/ip3/yogataraapi.prahlad.app.ico",
     "slug": "yogatara-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 917,
-    "timeDay": 518,
-    "timeWeek": 1182,
-    "timeMonth": 917,
-    "timeYear": 917,
-    "dailyMinutesDown": {}
+    "time": 899,
+    "timeDay": 530,
+    "timeWeek": 1129,
+    "timeMonth": 899,
+    "timeYear": 899,
+    "dailyMinutesDown": {
+      "2026-11-02": 0
+    }
   },
   {
     "name": "Yogatara login and accounts",
