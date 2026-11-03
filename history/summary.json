@@ -4,19 +4,19 @@
     "url": "https://api.occultapi.com/api/health/",
     "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
     "slug": "occult-api",
-    "status": "down",
+    "status": "up",
     "uptime": "99.86%",
-    "uptimeDay": "98.33%",
+    "uptimeDay": "98.29%",
     "uptimeWeek": "99.76%",
     "uptimeMonth": "99.86%",
     "uptimeYear": "99.86%",
-    "time": 482,
-    "timeDay": 330,
-    "timeWeek": 466,
-    "timeMonth": 482,
-    "timeYear": 482,
+    "time": 485,
+    "timeDay": 433,
+    "timeWeek": 472,
+    "timeMonth": 485,
+    "timeYear": 485,
     "dailyMinutesDown": {
-      "2026-11-03": 24
+      "2026-11-03": 25
     }
   },
   {
@@ -60,17 +60,17 @@
     "url": "https://api.occultapi.com/api/docs/index/",
     "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
     "slug": "occult-api-mcp",
-    "status": "down",
+    "status": "up",
     "uptime": "99.91%",
-    "uptimeDay": "98.98%",
+    "uptimeDay": "98.94%",
     "uptimeWeek": "99.85%",
     "uptimeMonth": "99.91%",
     "uptimeYear": "99.91%",
-    "time": 950,
-    "timeDay": 745,
-    "timeWeek": 898,
-    "timeMonth": 950,
-    "timeYear": 950,
+    "time": 958,
+    "timeDay": 930,
+    "timeWeek": 916,
+    "timeMonth": 958,
+    "timeYear": 958,
     "dailyMinutesDown": {
       "2026-11-03": 15
     }
@@ -98,19 +98,19 @@
     "url": "https://yogataraapi.prahlad.app/api/health/",
     "icon": "https://icons.duckduckgo.com/ip3/yogataraapi.prahlad.app.ico",
     "slug": "yogatara-api",
-    "status": "down",
+    "status": "up",
     "uptime": "99.97%",
-    "uptimeDay": "99.64%",
-    "uptimeWeek": "99.95%",
+    "uptimeDay": "99.59%",
+    "uptimeWeek": "99.94%",
     "uptimeMonth": "99.97%",
     "uptimeYear": "99.97%",
-    "time": 866,
-    "timeDay": 540,
-    "timeWeek": 1073,
-    "timeMonth": 866,
-    "timeYear": 866,
+    "time": 858,
+    "timeDay": 574,
+    "timeWeek": 1044,
+    "timeMonth": 858,
+    "timeYear": 858,
     "dailyMinutesDown": {
-      "2026-11-03": 5
+      "2026-11-03": 6
     }
   },
   {
