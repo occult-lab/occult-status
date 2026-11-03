@@ -4,18 +4,20 @@
     "url": "https://api.occultapi.com/api/health/",
     "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
     "slug": "occult-api",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.86%",
+    "uptimeDay": "98.33%",
+    "uptimeWeek": "99.76%",
+    "uptimeMonth": "99.86%",
+    "uptimeYear": "99.86%",
     "time": 482,
     "timeDay": 330,
     "timeWeek": 466,
     "timeMonth": 482,
     "timeYear": 482,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-03": 24
+    }
   },
   {
     "name": "Occult API website",
@@ -58,18 +60,20 @@
     "url": "https://api.occultapi.com/api/docs/index/",
     "icon": "https://icons.duckduckgo.com/ip3/api.occultapi.com.ico",
     "slug": "occult-api-mcp",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.91%",
+    "uptimeDay": "98.98%",
+    "uptimeWeek": "99.85%",
+    "uptimeMonth": "99.91%",
+    "uptimeYear": "99.91%",
     "time": 950,
     "timeDay": 745,
     "timeWeek": 898,
     "timeMonth": 950,
     "timeYear": 950,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-03": 15
+    }
   },
   {
     "name": "Yogatara website",
@@ -94,18 +98,20 @@
     "url": "https://yogataraapi.prahlad.app/api/health/",
     "icon": "https://icons.duckduckgo.com/ip3/yogataraapi.prahlad.app.ico",
     "slug": "yogatara-api",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.97%",
+    "uptimeDay": "99.64%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.97%",
     "time": 866,
     "timeDay": 540,
     "timeWeek": 1073,
     "timeMonth": 866,
     "timeYear": 866,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-03": 5
+    }
   },
   {
     "name": "Yogatara login and accounts",
