@@ -1,7 +1,7 @@
 url: https://api.occultapi.com/api/health/
-status: degraded
+status: up
 code: 200
-responseTime: 7430
-lastUpdated: 2026-11-13T12:35:59.882Z
+responseTime: 561
+lastUpdated: 2026-11-13T12:40:37.483Z
 startTime: 2026-10-22T09:21:48.275Z
 generator: Upptime <https://github.com/upptime/upptime>
